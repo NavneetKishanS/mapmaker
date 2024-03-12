@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Map</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Potato Map</h1>
+    <div class="matrix" id="matrix"></div>
+    <div class="mission-container">
+        <div class="mission mission-1"><p id="borderlandsPoints" class="borderlandsPoints">Points: 0</p></div>
+        <div class="mission mission-2"><p class="edgeOfForestPoints">Points: 0</p></div>
+        <div class="mission mission-3"><p class="sleepyValleyPoints">Points: 0</p></div>
+        <div class="mission mission-4"><p class="wateringPotatoesPoints">Points: 0</p></div>
+    </div>
+    <div id="units-card" class="units-card">
+        Time Elapsed<br> 0 / 28
+    </div>
+    <div class="generator-card" id="generator-card">
+        
+        <p class="time-unit" id="time-unit">Time-unit : 0</p>
+        <button id="rotateBtn">Rotate</button>
+        <button id="mirrorBtn">Mirror</button>
+        <div class="grid" id="grid"></div>
+    </div>
+    <div class="points-card" id="points-card">Points: 0</div>
+    <audio id="myAudio">
+        <source src="audio/8bit_notification.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="endAud">
+        <source src="audio/gameEndAudio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="invalid">
+        <source src="audio/invalid_selection.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="start-up">
+        <source src="audio/startup_sound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="popup-container" class="popup-container">
+        <div class="popup-content">
+            <h2>Congratulations!</h2>
+            <p>You have scored 0 points.</p>
+            <button id="close-popup">Close</button>
+            <button id="reloadBtn">Restart</button>
+        </div>
+    </div>
+    <div class="spring">
+        <div>Spring</div>
+        <div class="text">Pt: 0</div>
+      </div>
+      
+      <div class="summer">
+        <div>Summer</div>
+        <div class="text">Pt: 0</div>
+      </div>
+      
+      <div class="autumn">
+        <div>Autumn</div>
+        <div class="text">Pt: 0</div>
+      </div>
+      
+      <div class="winter">
+        <div>Winter</div>
+        <div class="text">Pt: 0</div>
+      </div>
+    </div>
+    </div>
+    <button class ="reloadBtn" id="reloadBtn">Restart</button>
+    <div class="container"></div>
+    <script src="index.js"></script>
+</body>
+</html>
